@@ -1,5 +1,5 @@
 {
-  description = "ESP32-C3 MicroPython Development";
+  description = "ESP32-C3 Development";
 
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
@@ -10,6 +10,9 @@
     in {
       devShells.${system}.default = pkgs.mkShell {
         packages = [
+          pkgs.curl
+          pkgs.esptool
+          pkgs.gnumake
           pkgs.mpremote
         ];
       };
