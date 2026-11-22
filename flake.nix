@@ -14,6 +14,7 @@
           pkgs.esptool
           pkgs.gnumake
           pkgs.mpremote
+          pkgs.platformio-chrootenv
         ];
       };
     };
