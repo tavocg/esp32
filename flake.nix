@@ -13,8 +13,10 @@
           pkgs.curl
           pkgs.esptool
           pkgs.gnumake
+          pkgs.go
           pkgs.mpremote
           pkgs.platformio-chrootenv
+          pkgs.tinygo
         ];
       };
     };
