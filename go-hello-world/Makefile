@@ -1,4 +1,4 @@
-TARGET ?= esp32c3-supermini
+TARGET ?= $(or $(TINYGO_TARGET),esp32c3-supermini)
 PORT   ?=
 
 FLASH_PORT = $(if $(PORT),-port=$(PORT))
